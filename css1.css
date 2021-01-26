@@ -187,7 +187,7 @@ p{
 
 @media screen and (max-width: 800px) {
     body {
-      background-color: rgb(4, 4, 4)
+      background-color: #1d1a1a;
     }
     .body{
         display: flex;
@@ -221,7 +221,9 @@ p{
   }
 
   @media screen and (max-width: 380px) {
-
+    #name{
+        font-size: 1.7rem;
+    }
     #x2{
         position: relative;
         top: -12rem;
@@ -230,6 +232,9 @@ p{
   }
 
   @media screen and (max-width: 500px){
+      #name{
+          font-size: 1.9rem;
+      }
     .sidemenu{
         display: block;
         cursor: pointer;
@@ -238,19 +243,16 @@ p{
         padding: 10px;
         display: none;
         /* background-color: rgb(32 36 39); */
-        border: 1px solid black;
+        border: 1px solid #1d1a1a;
         background-color: rgb(32 36 39);
+        opacity: .7;
     }
-    #nav1:hover{
-        border: 1px solid black;
+    #nav1:hover, #nav2:hover{
+        border: 1px solid #1d1a1a;
         background-color: black;
         cursor: pointer;
     }
-    #nav2:hover{
-        background-color: rgb(32 36 39);
-        border: 1px solid black;
-        cursor: pointer;
-    }
+    
     #content{
         flex-direction: column-reverse;
         margin-top: 7rem;
