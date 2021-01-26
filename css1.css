@@ -42,7 +42,7 @@ body{
     white-space: nowrap;
     animation: typing 2.5s ease-out;
     animation-delay: 2.6s;
-    width: 11ch;
+    width: 8ch;
 }
 @keyframes typing{
 
@@ -52,7 +52,7 @@ body{
                 border-right: 1px solid white;
             }
             100%{
-                width: 11ch;
+                width: 8ch;
                 border-right: 0px solid white;
             }
 
