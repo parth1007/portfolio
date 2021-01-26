@@ -1,0 +1,250 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #1d1a1a;;
+}
+#nav{
+    height: 100px;
+    width: 100%;
+    color: white;
+    margin-top: 0;
+}
+#content{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.navtext{
+    padding: 40px;
+    margin-right: 7%;
+    font-size: 1.2em;
+    color: rgb(19,247,210,1);
+}
+
+.text-box{
+    width: 45%;
+    float: left;
+    color: white;
+    padding: 10px;
+    padding-top: 4rem;
+}
+.box{
+    width: 45%;
+}
+.body{
+    display:flex;
+}
+#name{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(19,247,210,1);
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s ease-out;
+    animation-delay: 3s;
+    width: 11ch;
+}
+@keyframes typing{
+
+            0%
+            {
+                width: 0ch;
+                border-right: 1px solid white;
+            }
+            100%{
+                width: 11ch;
+                border-right: 0px solid white;
+            }
+
+        }
+
+
+    h3{
+        font-family: 'Times New Roman', Times, serif;
+        
+        animation: fadein 2s linear;
+        animation-delay: 5.5s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+    h5{
+        font-family: 'Times New Roman', Times, serif;
+        animation: fadein 2s linear;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        animation-delay: 7.5s;
+    }
+
+    @keyframes fadein{
+        0%
+        {
+            opacity: 0;
+        }
+        100%
+        {
+            opacity: 1;
+        }
+    }
+
+        /* *************** image section *********************** */
+        
+.ghlogo{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    height: 80px;
+    width: 80px;
+}
+#logo1{
+    height: 50px;
+    width: 50px;
+}
+#logo2{
+    position: relative;
+    top:-2.8rem;
+    left: .5rem;
+}
+#profileimg{
+    height: 250px;
+    width: 250px;
+    position: relative;
+    top: 4rem;
+    left: 14vw;
+    border-radius: 150px;
+    object-fit: cover;
+}
+#circle{
+    background-color: rgb(19,247,210,1);
+    opacity: .5;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    top: -2rem;
+    left: 11vw;
+    border-radius: 50px;
+}
+#x1{
+    left: 4.5rem;
+    height: 20px;
+    position: relative;
+    top: 5.5rem;
+
+}
+#x2{
+    height: 20px;
+    position: relative;
+    left: 10vw;
+    top: -10.5rem;
+}
+    /* *************** image section-end *********************** */
+    /* *************** footer ************** */
+footer{
+        background-color: rgba(0, 0, 0, 0);
+        height: 100px;
+        position: relative;
+        bottom: -4rem;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+}
+i {
+    border: 1px solid rgb(19,247,210,1);
+}
+i:hover{
+    box-shadow: 0px 0px 15px rgb(19,247,210,1);
+}
+.fa{
+    padding: 10px;
+    margin: 20px;
+    color: rgb(19,247,210,1);
+    border-radius: 25px;
+    height: 16px;
+    width: 16px;
+    
+}
+.fa-facebook{
+
+    width: 16px;
+}
+p{
+    color: white;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-top: 0;
+    
+}
+
+/*  -------------------media queries------------------- */
+
+@media screen and (max-width: 800px) {
+    body {
+      background-color: rgb(4, 4, 4)
+    }
+    .body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #profileimg{
+        margin-left: -6rem;
+    }
+    #circle{
+        margin-left: -7rem;
+        margin-top: 0rem;
+    }
+    #x1{
+
+        margin-left: -6rem;
+    }
+    #x2{
+        margin-left: 4rem;
+        top: -10rem;
+    }
+  }
+
+  .sidemenu{
+    top: 2.5rem;
+    right: 10vw;
+    height: 1.5rem;
+    position: absolute;
+    display: none;
+  }
+
+  @media screen and (max-width: 380px) {
+
+    #x2{
+        position: relative;
+        top: -12rem;
+        left: 6rem;}
+
+  }
+
+  @media screen and (max-width: 500px){
+    .sidemenu{
+        display: block;
+        cursor: pointer;
+    }
+    .navtext{
+        padding: 10px;
+        display: none;
+        /* background-color: rgb(32 36 39); */
+        border: 1px solid black;
+    }
+    #nav1:hover{
+        background-color: rgb(32 36 39);
+        border: 1px solid black;
+        cursor: pointer;
+    }
+    #nav2:hover{
+        background-color: rgb(32 36 39);
+        border: 1px solid black;
+        cursor: pointer;
+    }
+    #content{
+        flex-direction: column-reverse;
+        margin-top: 7rem;
+    }
+
+  }
+
+

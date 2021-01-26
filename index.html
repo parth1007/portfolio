@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parth Soni</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css1.css">
+    <link rel="stylesheet" href="load.css">
+    <link rel="stylesheet" href="typewritter.css">
+    
+</head>
+<body>
+
+    <nav id="nav">
+        <div class="ghlogo">
+            <img class="logo" id="logo1" src="Vector1.png">
+            <img class="logo" id="logo2" src="Vector.png">
+        </div>            
+        <div id="content">
+            <div class="navtext" id="nav1">Contact</div>
+            <div class="navtext" id="nav2">About</div>
+            <img src="sidemenu.png" class="sidemenu" onclick="myFunction()">
+    </nav>
+
+    <div class="body">
+
+        <div class="box">
+            <img id="profileimg" src="levi.jpg">
+            <img src="X.png" id="x1">
+            <img src="X.png" id="x2">
+            <div id="circle"></div>
+        </div>
+        
+        <div class="text-box">
+            <h1 id="name">Levi Ackerman</h1>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, hic iure. Repellendus ea libero blanditiis explicabo! </h3>
+            <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, aut accusantium nobis ad eius voluptatem similique provident corrupti unde asperiores eligendi fugit deleniti enim modi nisi quis inventore rem! Vitae, obcaecati architecto!</h5>
+        </div>
+    </div>
+
+    <footer>
+        <div class="icons">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+        
+        </div>
+        <p>Made by Parth Soni &copy; 2021 </p>
+    </footer>
+
+    <!-- Page loader -->
+
+    <div id="loadpage">
+        <div class="loader"></div>
+        </div>
+    
+
+        <script type = "text/javascript">   
+            setTimeout(function(){
+               document.getElementById("loadpage").style.display="none";
+            }, 3000);  
+
+
+            function myFunction() {
+                var x = document.getElementById("nav1");
+                var y = document.getElementById("nav2");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+                
+                if (y.style.display === "none") {
+                    y.style.display = "block";
+                } else {
+                    y.style.display = "none";
+                }
+            }
+        </script>
+</body>
+</html>
