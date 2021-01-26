@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #1d1a1a;;
+    background-color: #1d1a1a;
 }
 #nav{
     height: 100px;
@@ -16,8 +16,9 @@ body{
 .navtext{
     padding: 40px;
     margin-right: 7%;
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: rgb(19,247,210,1);
+    border-radius: 20px;
 }
 
 .text-box{
@@ -35,11 +36,12 @@ body{
 }
 #name{
     font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
     color: rgb(19,247,210,1);
     overflow: hidden;
     white-space: nowrap;
-    animation: typing 2s ease-out;
-    animation-delay: 3s;
+    animation: typing 2.5s ease-out;
+    animation-delay: 2.6s;
     width: 11ch;
 }
 @keyframes typing{
@@ -59,14 +61,18 @@ body{
 
     h3{
         font-family: 'Times New Roman', Times, serif;
+        font-weight: lighter;
+        font-size: 1.3rem;
         
-        animation: fadein 2s linear;
+        animation: fadein 1.8s linear;
         animation-delay: 5.5s;
         animation-fill-mode: forwards;
         opacity: 0;
     }
     h5{
         font-family: 'Times New Roman', Times, serif;
+        font-weight: lighter;
+        font-size: 1.1rem;
         animation: fadein 2s linear;
         animation-fill-mode: forwards;
         opacity: 0;
@@ -110,6 +116,10 @@ body{
     left: 14vw;
     border-radius: 150px;
     object-fit: cover;
+    box-shadow: 0 0 20px rgba(0, 0, 0);
+}
+#profileimg:hover{
+    box-shadow: 0 0 100px rgb(0,0,0);
 }
 #circle{
     background-color: rgb(19,247,210,1);
@@ -121,12 +131,12 @@ body{
     left: 11vw;
     border-radius: 50px;
 }
+
 #x1{
     left: 4.5rem;
     height: 20px;
     position: relative;
     top: 5.5rem;
-
 }
 #x2{
     height: 20px;
@@ -229,10 +239,11 @@ p{
         display: none;
         /* background-color: rgb(32 36 39); */
         border: 1px solid black;
+        background-color: rgb(32 36 39);
     }
     #nav1:hover{
-        background-color: rgb(32 36 39);
         border: 1px solid black;
+        background-color: black;
         cursor: pointer;
     }
     #nav2:hover{
